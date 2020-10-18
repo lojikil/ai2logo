@@ -1,0 +1,15 @@
+See "On generating unique names", Lennart Augustsson, Rittri and Dan Synek. Journal of Functional Programming 4(1):117-123, 1994.
+
+Beware of Programmers who carry screwdrivers.                                                                                                                                                           
+                -- Leonard Brandwein
+                
+http://www.earthisland.org/journal/index.php/eij/article/silent_towers_empty_skies/
+http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html
+
+to map [ fn lst ]
+	if empty? lst
+		[ ]
+		cons 
+			fn first lst
+			map :fn butfirst lst
+end

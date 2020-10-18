@@ -1,0 +1,6 @@
+; takeoff primitive for AI2LOGO
+to takeoff 'word 'string
+	if emptyq :string then result 'fail
+	if not (:word=f :string) then result 'fail
+	result bf :string
+end
